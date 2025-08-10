@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form in HTML</title>
+
+    <style>
+        table{
+            border-collapse: collapse;
+        }
+    </style>
+</head>
+<body>
+    <h2><u>Safaricom Shop</u></h2>
+        <h3><u>Items available</u></h3>
+        <ol type="1">
+            <li>Sim cards</li>
+            <li>Neon Smarter</li>
+            <li>Credit cards</li>
+            <li>T-shirts</li>
+
+        </ol>
+      <table border="2">
+        <caption>Working hours</caption>
+        <thead>
+            <tr>
+                <th></th>
+                <th>08:00 - 12:00</th>
+                <th>12:00 - 14:00</th>
+                <th>14:00 - 16:00</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>MON</td>
+                <td rowspan="5">Morning Session</td>
+                <td rowspan="5" align="center">Lunch</td>
+                <td rowspan="5" >Afternoon Session</td>
+            </tr>
+            <tr>
+               <td>TUE</td>
+            </tr>
+            <tr>
+                <td>WED</td>
+            </tr>
+            <tr>
+                <td>THUR</td>
+            </tr>
+            <tr>
+                <td>FRI</td>
+            </tr>
+            <tr>
+                <td>SAT</td>
+                <td>Morning Session</td>
+                <td>Closed</td>
+                <td>Closed</td>
+            </tr>
+            <tr>
+                <td>SUN</td>
+                <td colspan="3" align="center">Closed</td>
+                
+            </tr>
+        </tbody>
+
+      </table>
+    <form action="">
+        <fieldset>
+        <legend><i><b>Fill the form below:</b></i><br></legend>
+        <label for="username">Username:</label>
+        <input type="text" id="username" placeholder="Name" required>
+        <br>
+        <label for="email">Email:</label>
+        <input type="text" id="email" placeholder="Email" required><br>
+        <label for="password">Password:</label>
+        <input type="password" id="password" placeholder="Password" required>
+        <br><br>
+        <label for="gender">Select Your gender:</label><br>
+        <label for="female"> Female</label>
+        <input type="radio" name="gender"><br>
+        <label for="male"> Male</label>
+        <input type="radio" name="gender"><br><br>
+
+        <label for="items">Items Purchased:</label><br>
+        <input type="checkbox">
+        <label for="cards">Sim Cards</label><br>
+        <input type="checkbox">
+        <label for="neon">Neon Smarter</label><br>
+        <input type="checkbox">
+        <label for="credit">Credit Cards</label><br>
+        <input type="checkbox">
+        <label for="tshirt">T-shirts</label><br><br>
+
+        <label for="payment">Select Your Payment Method:</label>
+        <Select>
+        <option >Select</option>
+        <option value="mpesa">Mpesa</option>
+        <option value="cash">Cash</option>
+        <option value="bank">Bank</option>
+
+        </Select>
+        
+
+    </fieldset>
+    <Button type="submit">Submit</Button>
+    <Button type="reset">Reset</Button>
+    </form>
+    <audio src="" autoplay controls></audio><br>
+    <video src="" autoplay controls></video>
+    
+</body>
+</html>
